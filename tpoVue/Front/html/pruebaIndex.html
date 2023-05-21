@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciArgentina</title>
+    <link rel="stylesheet" href="../css/styles1.css">    
+</head>
+<body>
+  <header class="hero">
+      <h2 class="logo">Eventos<span> Musicales</span></h2>
+        <nav>
+          <ul>
+         <li><a href="../html/index.html">Inicio</a></li>
+         <li><a href="#">Eventos</a></li>
+         <li><a href="../html/contact.html">Contacto</a></li>
+         <li><a href="../html/About.html">About</a></li>
+         <li><a href="../html/login.html">Registro</a></li>
+        </ul>
+        <button type="button">Subscribete</button>
+       </header>
+  <section>
+   <section class="img-inicio">
+    <img src="https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80"
+    alt="" class="carrusel">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+    alt="" class="carrusel">
+<img src="../img/fondopantalla.jpg"alt="" class="carrusel">
+   </section>
+<main>
+
+    <section id="container-eventos">
+        <section id="musicos">
+
+                <!-- ROCK -->
+                <article id="container-rock">
+                    <h3>Concierto de Rock</h3>
+                    <article  v-for="i in team" class="item-eventos">
+                        <!-- <p><strong>Fecha:</strong> 30 de abril</p>
+                        <p><strong>Lugar:</strong> Estadio Nacional</p>
+                        <button><a href="#">+ Info</a></button> -->
+                        <img v-bind:src="i.image" alt="" style="max-width: 90%; height: auto; border-radius: 40px;">
+                        <p><strong>Artista:</strong>{{i.name}}</p>
+                    </article>
+                </article>
+        </section>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="container-galeria">
+        <article>
+            <h3>Galería de Fotos</h3>
+            <img class="img-galeria" src="../img/green day.webp" alt="Concierto 1">
+            <img class="img-galeria" src="../img/coldplay.webp" alt="Concierto 2">
+            <img class="img-galeria" src="../img/concierto1.webp" alt="Concierto 1">
+            <img class="img-galeria" src="../img/concierto2.webp" alt="Concierto 4">
+            <img class="img-galeria" src="../img/hanny-naibaho.jpg" alt="Concierto 4">
+            <img class="img-galeria" src="../img/tijs-van-leur.jpg" alt="Concierto 4">        
+        </article>
+    
+    </section>
+    <section id="container-patrocinadores">
+        <article>
+            <h3>Patrocinadores</h3>
+            <img class="img-galeria" src="../img/Coca-Cola-Logo-Black-and-White.png">
+            <img class="img-galeria" src="../img/fondopantalla.jpg">
+            <img class="img-galeria" src="../img/pub-coca.jpg">        
+        </article>
+    </section>
+  </main>
+    <footer>
+        <p>Derechos de autor © 2023 Eventos Musicales. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/musicApi.js"></script>
+</body>
+</html>
