@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../css/style-login.css">
+    <link rel="stylesheet" type="text/css" href="/style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!---boxicons -->
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -18,27 +19,54 @@
    <section class="container">
         <article class="main-box">
            <h1>Registrate</h1>
-           <form action="">
-             <article class="input-box">
-                <span class="icon"><i class='bx bxs-envelope'></i></span>
-                <input type="email" required>
-                <label>Email</label>
-             </article>
-             <article class="input-box">
-                <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
-                <input type="contraseña" required>
-                <label>Constraseña</label>
-             </article>
-             <section class="check">
-                <label><input type="checkbox">Recordame</label>
-                <a href="#">Olvide Contraseña</a>
-             </section>
-             <button type="submit" class="btn">Registro</button>
-             <section class="registro">
-                <p>Don`t have an account?<a href="#" class="register-link">Sign Up!</a></p>
-             </section>
-            </form>
+           <form id="myForm" action="">
+            <article class="input-box">
+              <span class="icon"><i class='bx bxs-envelope'></i></span>
+              <input type="email" id="email" required>
+              <label>Email</label>
+            </article>
+            <article class="input-box">
+              <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+              <input type="password" id="password" required>
+              <label>Contraseña</label>
+            </article>
+            <section class="check">
+              <label><input type="checkbox">Recordarme</label>
+              <a href="#">Olvidé Contraseña</a>
+            </section>
+            <button type="submit" class="btn">Registro</button>
+            <section class="registro">
+              <p>¿No tienes una cuenta? <a href="contact.html" class="register-link">¡Regístrate!</a></p>
+            </section>
+          </form>
         </article>
-   </section> 
+   </section>
+   <footer class="footer">
+    <section class="footer-container">
+      <article class="footer-logo">
+        <img src="logo.png" alt="Logo de la empresa">
+      </article>
+      <article class="footer-links">
+        <ul class="footer-menu">
+          <li><a href="prueba1.html">Inicio</a></li>
+         <li><a href="servicios.html">Servicios</a></li>
+         <li><a href="login.html">Registro</a></li>
+         <li><a href="acerca-de-nosotros.html">Quienes somos</a></li>
+        </ul>
+      </article>
+      <article class="footer-social">
+        <ul class="footer-social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </article>
+    </section>
+    <section class="footer-bottom">
+      <p>&copy; 2023 ReciArgentina. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+   <script src="formulario.js"></script> 
 </body>
 </html>
