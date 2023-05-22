@@ -19,8 +19,46 @@ article {
     padding: 20px;
     width: 100%;
   }
-
- 
+/*Media query */
+/*Estilos para dispositivos grandes (mayor o igual a 1200px)*/
+@media (min-width:1200px){
+	body{
+		width: 100%;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: url("../img/lolla5.webp");
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	}
+}
+/*Estilos para dispositivos medianos (entre 992px y 1199px)*/
+@media (min-width:992px)and (max-width:1199px){
+	body{
+		width: 100%;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: url("../img/fondopantalla2.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	}
+}
+/*Estilos para dispositivos pequeños (menor a 992px)*/
+@media (max-width:991px){
+	body{
+		width: 100%;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-image: url("../img/fondopantalla3.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	}
+}
 /*Navegación*/  
 .hero{
 	/*Revisar esta parte que hace al menu scrolleable*/
@@ -417,7 +455,7 @@ box-shadow:  -24px 24px 48px /* #bebebe, */
 	box-sizing: border-box;
 	margin: 10px;
     width:  auto;
-    height: 150px;
+    height: 250px;
 	overflow: hidden;
 	object-fit: cover;
 	border-radius: 52px;
@@ -452,9 +490,54 @@ box-shadow:  -24px 24px 48px /* #bebebe, */
 box-shadow:  -24px 24px 48px /* #bebebe, */
              24px -24px 48px black;
 }
-/*Query pantalla responsive*/
-@media screen and (max-width:1024px) {
-	*{
-		background-color: lightpink;
-	}
+/*Formulario de Registro*/
+#form{
+	width:500px;
+	margin:20vh auto 0 auto;
+	padding: 20px;
+	background-color: #0d7797;
+	border-radius: 4px;
+	font-size: 12px;
+}
+#form h1 {
+	color: #0f2027;
+	text-align: center;
+}
+#form button {
+	padding: 10px;
+	margin-top: 10px;
+	width: 100%;
+	color: white;
+	background-color: rgb(41,57,194);
+	border: none;
+	border-radius: 4px;
+}
+.input-control {
+	display: flex;
+	flex-direction: column;
+}
+.input-control input{
+	border:2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 100%;
+}
+
+.input-control input:focus{
+	outline:0;
+}
+
+.input-control.success input {
+	border-color: rgb(4, 170, 48);
+}
+.input-control.error input {
+	border-color: rgb(164, 3, 3);
+}
+
+.input-control.error {
+	color:rgb(164, 3, 3);
+	font-size: 9px;
+	height:13px;
 }
