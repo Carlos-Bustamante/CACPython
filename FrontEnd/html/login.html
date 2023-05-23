@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/style-login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!---boxicons -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!---google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+   <section class="container">
+        <article class="main-box">
+           <h1>Registrate</h1>
+           <form id="myForm" action="">
+            <article class="input-box">
+              <span class="icon"><i class='bx bxs-envelope'></i></span>
+              <input type="email" id="email" required>
+              <label>Email</label>
+            </article>
+            <article class="input-box">
+              <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+              <input type="password" id="password" required>
+              <label>Contraseña</label>
+            </article>
+            <section class="check">
+              <label><input type="checkbox">Recordarme</label>
+              <a href="#">Olvidé Contraseña</a>
+            </section>
+            <button type="submit" class="btn">Registro</button>
+            <section class="registro">
+              <p>¿No tienes una cuenta? <a href="servicios.html" class="register-link">¡Regístrate!</a></p>
+            </section>
+          </form>
+        </article>
+   </section>
+   <footer class="footer">
+    <section class="footer-container">
+      <article class="footer-social">
+        <ul class="footer-social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </article>
+    </section>
+    <section class="footer-bottom">
+      <p>&copy; 2023 ReciArgentina. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+   <script src="../js/login.js"></script> 
+</body>
+</html>
