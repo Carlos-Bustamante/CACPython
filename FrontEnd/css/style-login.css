@@ -26,6 +26,7 @@ body{
     width: 100%;
     max-width: 450px;
     height: 530px;
+    /* height: 58%; */
     background: transparent;
     border-radius: 20px;
     border:2px solid rgb(257,257,257,.7);

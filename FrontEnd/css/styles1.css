@@ -4,7 +4,9 @@
  }
  body {
 	width: 100%;
-	font-family: Arial, sans-serif;
+	/* font-family: Arial, sans-serif; */
+	font-family: 'Poppins', sans-serif;
+	color: #ffffff;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -199,6 +201,19 @@ h3{
     flex-wrap: wrap;
 	margin: 70px auto 0;
 }
+.iframe-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  .iframe-container iframe {
+	  border-radius: 5%;
+	  width: 50%;
+      height: 50%;
+  }
 #container-patrocinadores {
 	width: 100%;
 	height: auto;
@@ -438,7 +453,7 @@ box-shadow:  -24px 24px 48px /* #bebebe, */
   
 /*Servicios*/
 .container-servicios{
-	background-color: sienna;
+	background-color: rgb(49, 64, 119);
 	display:block;
 	width: 100%;
 	align-content:center;
