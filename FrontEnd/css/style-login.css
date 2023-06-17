@@ -86,7 +86,11 @@ button:hover{
     position: relative;
     width: 100%;
     max-width: 450px;
+<<<<<<< HEAD
     height: 430px;
+=======
+    height: 530px;
+>>>>>>> e1cbfbe67fb3d36a7f71b5a01372f181325eff17
     /* height: 58%; */
     background: transparent;
     border-radius: 20px;
