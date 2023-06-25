@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReciArgentina</title>
+    <link rel="stylesheet" href="./css/styles1.css">
+    <!---recurso de imagenes-->
+    <!---https://unsplash.com/es-->
+      <!---google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!---iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/08a9777853.js" crossorigin="anonymous"></script>
+ </head>
+<body>
+  <header class="hero">
+      <h2 class="logo">Eventos<span> Musicales</span></h2>
+        <nav>
+          <ul>
+         <li><a href="#">Inicio</a></li>
+         <li><a href="./html/servicios.html">Servicios</a></li>
+         <li><a href="./html/login.html">Registro</a></li>
+         <li><a href="./html/acerca-de-nosotros.html">Quienes somos</a></li>
+        </ul>
+        <button type="button">Subscribete</button>
+   </header>
+  
+
+    <!-- ANIMACION -->
+  <section class="img-inicio">
+    <img src="./img/imgInicio.jpg" alt="" class="carrusel">
+    <img src="./img/imgInicio2.jpg" alt="" class="carrusel">
+    <img src="./img/fondopantalla.jpg"alt="" class="carrusel">
+   </section>
+   
+<main>
+   <section id="container-eventos">
+    <section id="musicos">
+            <!-- ROCK -->
+            <article id="container-rock">
+                <h3 class="titlePrueba">Concierto de Rock</h3>
+                <article  v-for="i in team" class="item-eventos">
+                    <img v-bind:src="i.image" alt="" style="max-width: 90%; height: auto; border-radius: 40px;">
+                    <p><strong>Artista:</strong>{{i.name}}</p>
+                    <i class="fa-solid fa-user" style="color: #9ea3f0;"></i>
+                </article>
+            </article>
+    </section>
+  </section>
+
+  <section id="container-galeria">
+        <article>
+        <h3 class="titlePrueba">Galería de Fotos</h3>
+        <img class="img-galeria" src="./img/green day.webp" alt="Concierto 1">
+        <img class="img-galeria" src="./img/coldplay.webp" alt="Concierto 2">
+        <img class="img-galeria" src="./img/concierto1.webp" alt="Concierto 1">
+        <img class="img-galeria" src="./img/concierto2.webp" alt="Concierto 4">
+        <img class="img-galeria" src="./img/hanny-naibaho.jpg" alt="Concierto 4">
+        <img class="img-galeria" src="./img/imgGaleria2.jpg" alt="Concierto 4">
+        
+        </article>    
+    </section>
+
+    <section class="iframe-container iframe">
+      <h3>Lugar del evento</h3>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13155.520113998677!2d-58.53980671284174!3d-34.48056760000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb040d363f587%3A0x78e513cecbc25f7f!2sHip%C3%B3dromo%20de%20San%20Isidro!5e0!3m2!1ses-419!2sar!4v1684803663854!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="container-patrocinadores">
+        <article>
+        <h3 class="titlePrueba">Patrocinadores</h3>
+        <img class="img-galeria" src="./img/Coca-Cola-Logo-Black-and-White.png">
+        <img class="img-galeria" src="./img/pub-coca.jpg">
+        <img class="img-galeria" src="./img/patrocindador2.png">
+        
+        </article>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <section class="footer-container">
+      <article class="footer-logo">
+        <img src="./img/logo.jpg" alt="Logo de la empresa" style="max-width: 30%; height: auto; border-radius: 10px;">
+      </article>
+      <article class="footer-links">
+        <ul class="footer-menu">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./html/servicios.html">Servicios</a></li>
+          <li><a href="./html/login.html">Registro</a></li>
+          <li><a href="./html/acerca-de-nosotros.html">Quienes somos</a></li>
+        </ul>
+      </article>
+      <article class="footer-social">
+        <ul class="footer-social-icons">
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+      </article>
+    </section>
+    <section class="footer-bottom">
+      <p>&copy; 2023 ReciArgentina. Todos los derechos reservados.</p>
+    </section>
+  </footer>
+
+
+  <!-- scripts -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/musicApi.js"></script>
+  
+</body>
+</html>
