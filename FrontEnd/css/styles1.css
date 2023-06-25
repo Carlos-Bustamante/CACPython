@@ -155,13 +155,7 @@ main {
     flex-direction: column;
     align-items: center;
 }
-footer {
-	background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 1rem;
-}
+
 /*Contenedores padres*/
 
 #container-eventos {
@@ -406,6 +400,13 @@ box-shadow:  -24px 24px 48px /* #bebebe, */
 	flex:5;
 }
 /*Footer */
+footer {
+	background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
 /* Estilos para el contenedor principal del footer */
 .footer-container {
 	display: flex;
@@ -424,6 +425,8 @@ box-shadow:  -24px 24px 48px /* #bebebe, */
   
   /* Estilos para los íconos de redes sociales del footer */
   .footer-social-icons {
+	display: flex;
+	display: flex-start;
 	list-style: none;
 	padding: 0;
 	margin: 0;
