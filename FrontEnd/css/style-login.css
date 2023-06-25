@@ -20,6 +20,7 @@ body{
     background-size: cover;
     background-position: center;
 }
+<<<<<<< HEAD
 
 .hero {
     position: fixed;
@@ -133,11 +134,18 @@ button:hover{
 
 .container{
 
+=======
+.container{
+>>>>>>> f1fd19b867a97b855e3902cefbc34ea3241d8953
     margin:2px;
     position: relative;
     width: 100%;
     max-width: 450px;
+<<<<<<< HEAD
     height: auto;
+=======
+    height: 530px;
+>>>>>>> f1fd19b867a97b855e3902cefbc34ea3241d8953
     /* height: 58%; */
     background: transparent;
     border-radius: 20px;
@@ -149,7 +157,11 @@ button:hover{
     overflow: hidden;
 }
 .main-box{
+<<<<<<< HEAD
     padding: 25px;
+=======
+    padding: 50px;
+>>>>>>> f1fd19b867a97b855e3902cefbc34ea3241d8953
     width: 100%;
 }
 .main-box h1{
@@ -168,7 +180,11 @@ button:hover{
 .input-box label {
     position: absolute;
     top:50%;
+<<<<<<< HEAD
     left:46px;
+=======
+    left:6px;
+>>>>>>> f1fd19b867a97b855e3902cefbc34ea3241d8953
     transform:translate(-50%);
     pointer-events: none;
     color:#ffffff;

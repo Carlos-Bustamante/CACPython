@@ -27,6 +27,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
       // Realizar alguna acción, como enviar el formulario
       console.log('Formulario válido. Enviar datos al servidor...');
     }
+<<<<<<< HEAD
   });
   
 
@@ -36,3 +37,6 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
   });
   
   
+=======
+  });
+>>>>>>> f1fd19b867a97b855e3902cefbc34ea3241d8953
