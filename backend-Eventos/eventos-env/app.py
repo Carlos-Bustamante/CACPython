@@ -17,14 +17,14 @@ class Producto(db.Model):
     id=db.Column(db.Integer, primary_key=True)
     nombre=db.Column(db.String(100))
     precio=db.Column(db.Integer)
-    stock=db.Column(db.Integer)
-    imagen=db.Column(db.String(400))
-    def __init__(self,nombre,precio,stock,imagen):
+    fecha=db.Column(db.String(100))
+    lugar=db.Column(db.String(100))
+    def __init__(self,nombre,precio,fecha,lugar):
 
         self.nombre=nombre
         self.precio=precio
-        self.stock=stock
-        self.imagen=imagen
+        self.fecha=fecha
+        self.lugar=lugar
 
 with app.app_context():
     db.create_all()
@@ -35,7 +35,7 @@ with app.app_context():
 
 class ProductoSchema(ma.Schema):
     class Meta:
-        fields=('id','nombre','precio','stock','imagen')
+        fields=('id','nombre','precio','fecha','lugar')
 
 producto_schema=ProductoSchema()
 productos_schema=ProductoSchema(many=True)
@@ -64,8 +64,8 @@ def delete_producto(id):
 def create_producto():    
     nombre=request.json['nombre']
     precio=request.json['precio']
-    stock=request.json['stock']
-    imagen=request.json['imagen']
+    stock=request.json['fecha']
+    imagen=request.json['lugar']
     new_producto=Producto(nombre,precio,stock,imagen)
     db.session.add(new_producto)
     db.session.commit()
@@ -76,8 +76,8 @@ def update_producto(id):
     producto=Producto.query.get(id)
     producto.nombre=request.json['nombre']
     producto.precio=request.json['precio']
-    producto.stock=request.json['stock']
-    producto.imagen=request.json['imagen']
+    producto.stock=request.json['fecha']
+    producto.imagen=request.json['lugar']
     db.session.commit()
     return producto_schema.jsonify(producto)
 
